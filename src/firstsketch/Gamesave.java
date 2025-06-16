@@ -16,6 +16,10 @@ public class Gamesave {
     public Gamesave(){
     }
     
+    /**
+     * This method saves the current stage to a file
+     * @param stage The stage to be saved
+     */
     public static void saveProgress(int stage) {
         try {
             PrintWriter writer = new PrintWriter("stage_save.txt");
@@ -25,6 +29,11 @@ public class Gamesave {
             System.out.println("Error saving progress: " + e.getMessage());
         }
     }
+    
+    /**
+     * This method loads the saved game from the file
+     * @return The saved stage number, or 0 if loading fails
+     */
     public static int loadSavedStage() {
         try {
             Scanner scanner = new Scanner(new File("stage_save.txt"));
