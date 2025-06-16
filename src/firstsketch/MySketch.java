@@ -295,6 +295,7 @@ public class MySketch extends PApplet {
         textSize(20);
         text("Press N for New Game", width / 2, height / 2);
         text("Press L to Load Game", width / 2, height / 2 + 30);
+        text("Press Esc to Save Game", width / 2, height / 2 + 60);
         textAlign(LEFT, BASELINE); // Resets text alignment for normal drawing
     }
 }
